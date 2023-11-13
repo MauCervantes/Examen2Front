@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <div class="menu__wrapper">
+        <div class="menu__bar">
+            <a href="../index.html" title="Logo" class="t">
+                Librería Siglo XXI
+            </a>
+            <img class="menu-icon" src="../assets/burger-menu.svg" title='Burger Menu' alt='Burger Menu' onclick="toggleMenu(this)">
+            <ul class="navigation">
+                <li>
+                    <a href="addAuthor.html" title="">Add Author</a>
+                </li>
+                <li>
+                    <a href="../index.html" title="">Book List</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="titlePage">
+        <h1>Add Book</h1>
+    </div>
+    <div class="global">
+        <div class="components">
+            <div class="newBook">
+                <div class="info">Title: </div>
+                <div class="input">
+                    <input type="text" name="title" id="title" class="inputBox" autocomplete="off" placeholder="Book Title">
+                </div>
+            </div>
+            <div class="newBook">
+                <div class="info">Author: </div>
+                <div class="input">
+                    <select name="author" id="author" class="inputBox"></select>
+                </div>
+            </div>
+            <div class="newBook">
+                <div class="info">Chapters: </div>
+                <div class="input">
+                    <input type="number" name="chapters" id="chapter" class="inputBox" autocomplete="off" value="0">
+                </div>
+            </div>
+            <div class="newBook">
+                <div class="info">Pages: </div>
+                <div class="input">
+                    <input type="number" name="pages" id="pages" class="inputBox" autocomplete="off" value="0">
+                </div>
+            </div>
+            <div class="newBook">
+                <div class="info">Price: </div>
+                <div class="input">
+                    <input type="number" name="price" id="price" class="inputBox" autocomplete="off" value="0">
+                </div>
+            </div>
+            <div class="divButton">
+                <button type="button" class="btn btn-info" id="btn">Add</button>
+            </div>
+        </div>
+    </div>
+    
+    <link rel="stylesheet" href="../css/barMenu.css">
+    <link rel="stylesheet" href="../css/styleAddBook.css">
+    <script src = "../js/scriptMenubar.js"></script>
+    <script src="../js/scriptAddBook.js"></script>
+</body>
+</html>

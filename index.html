@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Siglo XX1</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <div class="menu__wrapper">
+        <div class="menu__bar">
+            <a href="index.html" title="Logo" class="t">
+                Librería Siglo XXI
+            </a>
+            <img class="menu-icon" src="assets/burger-menu.svg" title='Burger Menu' alt='Burger Menu' onclick="toggleMenu(this)">
+            <ul class="navigation">
+                <li>
+                    <a href="html/addAuthor.html" title="">Add Author</a>
+                </li>
+                <li>
+                    <a href="html/addBook.html" title="">Add Book</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>Librería Siglo XXI</h1>
+    </div>
+
+    <div class = "subTitle">
+        <h4>Listado de libros</h4>
+    </div>
+
+    <div class="select">
+        Filter by author: 
+        <select class="selectAuthor" id="selectAuthor">
+            <option>*All</option>
+        </select>
+    </div>
+
+    <div class="divTable">
+        <center>
+            <table id = "tablaLibros" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Chapters</th>
+                        <th>Pages</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </center>
+    </div>
+
+    <script src = "js/scriptIndex.js"></script>
+    <script src = "js/scriptMenubar.js"></script>
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/barMenu.css">
+</body>
+</html>
